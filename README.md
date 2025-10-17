@@ -25,3 +25,7 @@ Rodar trecho: **pip install -r requirements.txt**
 
 #### Como testar  
 Rodar **pytest -v**  
+
+### Para ver o sistema funcionando com exemplo de uso  
+1. Na pasta raiz, abrir o terminal  
+2. python app.py -> executa o arquivo de exemplo de uso  
