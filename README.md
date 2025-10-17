@@ -1,31 +1,95 @@
-## Atividade 9 - Sistema task manager  
+# 🗂️ Sistema Task Manager – AT 9 (Testes de Software)
 
-### Descrição  
-Desenvolver um Sistema de Gerenciamento de Tarefas simples em Python, aplicando:  
-• Arquitetura em camadas  
-• Testes automatizados com pytest  
-• Separação de responsabilidades  
+Um sistema simples de **gerenciamento de tarefas** desenvolvido em **Python**, aplicando conceitos de **arquitetura em camadas**, **separação de responsabilidades** e **testes automatizados com pytest**.
 
-O sistema cria, lista, busca, atualiza e deleta tarefas.   
+---
 
+## ⚙️ Como Usar o Projeto
 
-### Grupo  
-Aléxia Santa Rosa Suares – 22.224.016-0  
+Siga as instruções abaixo para configurar e executar o projeto no seu ambiente local.
+
+### 🧩 Pré-requisitos
+
+- **Python 3.8+** instalado  
+- **pip** (gerenciador de pacotes do Python)
+
+---
+
+### 🚀 Passos para Execução
+
+#### 1️⃣ Clone o repositório
+```bash
+git clone <URL_DO_SEU_REPOSITORIO>
+cd <NOME_DA_PASTA_DO_PROJETO>
+```
+
+### 2️⃣ (Opcional, mas recomendado) Crie e ative um ambiente virtual
+
+Isso isola as dependências do projeto:
+
+### Windows
+```bash
+python -m venv venv
+.\venv\Scripts\activate
+```
+
+### Linux  
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3️⃣ Instale as dependências
+
+O projeto utiliza as bibliotecas listadas no arquivo requirements.txt.
+Execute:
+```bash
+pip install -r requirements.txt  
+```
+
+### 4️⃣ Execute os testes
+
+Para verificar se a implementação está correta, rode a suíte de testes:
+
+```bash
+pytest -v
+```
+
+Todos os testes devem passar com sucesso ✅  
+<img width="923" height="232" alt="image" src="https://github.com/user-attachments/assets/c3544e1b-f176-442a-a2d8-c417882a456b" />  
+
+### 5️⃣ Execute o exemplo de uso
+
+Para ver uma demonstração simples do sistema em ação:
+
+```bash
+python app.py
+```
+
+### 🧱 Estrutura do Projeto
+
+A organização das pastas separa claramente a lógica da aplicação dos testes automatizados.  
+
+```bash
+.
+├── task_manager/
+│   ├── __init__.py
+│   ├── task.py
+│   ├── storage.py
+│   └── repository.py
+├── tests/
+│   ├── conftest.py
+│   ├── test_task.py
+│   └── test_repository.py
+├── app.py
+├── requirements.txt
+└── README.md
+```
+
+### 👥 Grupo
+
+Aléxia Santa Rosa Suares – 22.224.016-0    
+
 Gabrielle Mitie Suzuke Tenguan – 22.124.097-1  
-Larissa Gonçalves da Silva – 22.224.022-8  
 
-### Instruções e detalhes    
-
-#### Estrutura de pastas  
-<img width="305" height="257" alt="image" src="https://github.com/user-attachments/assets/af392a98-6a47-4a0c-a112-2732a33481b2" />
-
-#### Como rodar    
-Estar dentro da pasta raiz **"AT9"**  
-Rodar trecho: **pip install -r requirements.txt**  
-
-#### Como testar  
-Rodar **pytest -v**  
-
-### Para ver o sistema funcionando com exemplo de uso  
-1. Na pasta raiz, abrir o terminal  
-2. python app.py -> executa o arquivo de exemplo de uso  
+Larissa Gonçalves da Silva – 22.224.022-8  
